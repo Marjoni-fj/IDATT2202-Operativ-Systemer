@@ -1,0 +1,14 @@
+# C compiled files
+*.o
+*.out
+
+# Executables from exercises
+printx
+mem
+stackoverflow
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
