@@ -6,6 +6,7 @@
 printx
 mem
 stackoverflow
+threadHello
 
 # VS Code
 .vscode/

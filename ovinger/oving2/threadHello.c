@@ -15,11 +15,11 @@ int main()
 {
   long i;
   for (i = 0; i < NTHREADS; i++)
-    pthread_create(&threads[i], NULL, go, (void *)i);
+    pthread_create(&threads[i], NULL, go, (void *)i); // Create a new thread to run func(args)
   for (i = 0; i < NTHREADS; i++)
   {
     long exitValue;
-    pthread_join(threads[i], (void *)&exitValue);
+    pthread_join(threads[i], (void *)&exitValue); // Wait for thread i to finish and get its exit value
     printf("Thread %ld returned with %ld\n", i, exitValue);
   }
   printf("Main thread done.\n");
